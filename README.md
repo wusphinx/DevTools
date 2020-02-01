@@ -10,3 +10,43 @@
 ```
 minikube start --image-mirror-country cn --iso-url=https://kubernetes.oss-cn-hangzhou.aliyuncs.com/minikube/iso/mniikube-v1.6.0.iso  --image-repository registry.cn-hangzhou.aliyuncs.com/google_containers --vm-driver=none
 ```
+
+### zsh
+用过才知道它的好
+```
+apt-get install zsh
+```
+既然用`zsh`,怎么可以少了`oh-my-zsh`
+```
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+```
+
+### docker
+曾经`java`说一次编译到处运行，后来才知道[`docker`](https://docs.docker.com/install/linux/docker-ce/ubuntu/)才真正实现了这一点,开发必备
+```
+$ sudo apt-get update
+
+$ sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+$ sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+```
+
+### multipass
+嫌`Virtualbox`太重?是时候试试轻量级虚拟机:[`multipass`](https://github.com/canonical/multipass)
+```
+sudo snap install multipass --classic
+```
+for macOS
+```
+brew cask install multipass
+```
