@@ -50,3 +50,9 @@ for macOS
 ```
 brew cask install multipass
 ```
+
+### http.server
+都2020年了，当然用`python3`了
+```
+python -m http.server
+```
