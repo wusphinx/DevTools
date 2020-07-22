@@ -56,3 +56,14 @@ brew cask install multipass
 ```
 python -m http.server
 ```
+
+### [golang proxy](https://github.com/goproxy/goproxy.cn/blob/master/README.zh-CN.md)
+配置golang模块代理
+```
+$ go env -w GO111MODULE=on
+$ go env -w GOPROXY=https://goproxy.cn,direct
+```
+私有代码仓库不走代理
+```
+$ go env -w GONOPROXY="your.githlab.cn"
+```
