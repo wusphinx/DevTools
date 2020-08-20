@@ -70,3 +70,6 @@ $ go env -w GONOPROXY="your.githlab.cn"
 
 ### `alias rm="rmtrash"`
 有没有过`rm`后痛心疾首的经历，没有也没关系，加上这条命令保平安
+
+### *awesome command*
+- 创建所有用户均有rwx权限的目录 `mkdir –pm777 DirM`
