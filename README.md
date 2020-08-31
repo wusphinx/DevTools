@@ -73,3 +73,7 @@ $ go env -w GONOPROXY="your.githlab.cn"
 
 ### *awesome command*
 - 创建所有用户均有rwx权限的目录 `mkdir –pm777 DirM`
+
+### json to go struct
+有没有遇到过这种场景：手握一推json数据，字段不少，层级也多，需要将这些json数据转换为Golang结构体，写起来还真是麻烦的紧，不过没关系，
+已有不少人碰到到这个问题，(json-to-go)[https://mholt.github.io/json-to-go/]一定能够帮到你！
