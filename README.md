@@ -68,6 +68,11 @@ $ go env -w GOPROXY=https://goproxy.cn,direct
 $ go env -w GONOPROXY="your.githlab.cn"
 ```
 
+### 私有代码仓库支持`go get`
+```
+$ git config --global url."git@your.githlab.cn:".insteadOf "http://your.githlab.cn/"
+```
+
 ### `alias rm="rmtrash"`
 有没有过`rm`后痛心疾首的经历，没有也没关系，加上这条命令保平安
 
